@@ -1,2 +1,8 @@
-package org.example.recapprojecttodoappbackend;public record TodoApiResponse() {
+package org.example.recapprojecttodoappbackend;
+
+import java.util.List;
+
+public record TodoApiResponse(
+        List<Todo> results
+) {
 }
